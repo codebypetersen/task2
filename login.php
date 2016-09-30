@@ -50,9 +50,7 @@ endif;
 <html>
 <head>
 	<title>Login Below</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://use.typekit.net/zvd5vgl.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
 

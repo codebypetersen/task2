@@ -3,6 +3,7 @@
 /* This needs to be here in order for sessions to work */
 session_start();
 
+/*requiring the database.php file to be posted here*/
 require 'database.php';
 
 /* If the current user logged in */
@@ -28,9 +29,8 @@ if( isset($_SESSION['user_id']) ){
 <html>
 <head>
 	<title>Task 2, PHP Login System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://use.typekit.net/zvd5vgl.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
 <body>
 
@@ -40,27 +40,27 @@ if( isset($_SESSION['user_id']) ){
 		<?php require 'menu.php'; ?>
 	</div>
 	
-    <!-- If the user is logged in -->
+    <!-- If the user is logged in he/she will see this -->
 	<?php if( !empty($user) ): ?>
 		
 		<br />Welcome <?= $user['email']; ?> 
-		<br /><br />You are successfully logged in!
+		<br /><br />You are now successfully logged in!
 		<br /><br />
-        <p>Here's that secret stuff you were promised:</p>
-        <a href="http://sfholleufer.com">Secret stuff</a><br><br><br>
-		<a href="logout.php">Logout?</a>
+        <p>Welcome to your own personal page</p>
+        <a href="http://swpgraphics.com">Portfolio</a><br><br><br>
+		<a href="logout.php">Logout of here?</a>
         
-	<!-- If the user is NOT logged in -->
+	<!-- If the user is NOT logged in he/she will see this -->
 	<?php else: ?>
 
 		<h1>What would you like to do?</h1>
-        <!-- Link to login.php page -->        
+        <!-- Link to the login.php page -->        
 		<a href="login.php"><p>Login here</p></a> or
         
-        <!-- Link to register.php page -->
+        <!-- Link to the register.php page -->
 		<a href="register.php"><p>Register for a profile</p></a>
         
-        <p class="p">Pssssst! If you log in, you will be able to view some secret stuff on this very page!</p>
+        <p class="p">If you log in, you will be redirected to your own personal page!</p>
 
 	<?php endif; ?>
     <?php require 'footer.php'; ?>

@@ -40,9 +40,7 @@ endif;
 <html>
 <head>
 	<title>Project 2.2 - PHP Login System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://use.typekit.net/zvd5vgl.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
 
