@@ -14,12 +14,13 @@ input[type="text"], input[type="email"], input[type="password"]{
 	border-radius: 3px;
 	border:1px solid #eee;
 	margin:20px auto;
+	background: lightgrey;
 }
 
 input[type="submit"]{
 	padding:10px;
 	color:#fff;
-	background-color:#0098cb;
+	background-color: navy;
 	width:320px;
 	margin:20px auto;
 	margin-top:0px;
@@ -29,24 +30,25 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-	background-color:#00b8eb;
+	background-color:blue;
 }
 
 .header{
-	border-bottom:1px solid #eee;
+	border-bottom:2px solid lightgrey;
 	padding:10px 0px;
 	width:100%;
 	text-align:center;
 }
 
 .header a{
-	color:#333;
+	color: navy;
 	text-decoration: none;
 }
 
 hr {
- width: 5%;	
- margin: 50px auto -15px auto;
+ width: 7%;	
+ margin: 20px auto -5px auto;
+ color: grey;
 }
 
 nav { 
@@ -75,7 +77,8 @@ nav ul li:hover {
 	list-style-type: none;
 	display: inline-block;
 	margin: 0 25px;
-	color: #0074FF;
+	color: navy;
+	text-decoration: underline; 
 }
 
 .gitty a {
@@ -84,14 +87,16 @@ nav ul li:hover {
 
 a, a:visited { 
 	text-decoration: none;
-	color: #0098cb;
+	color: navy;
 }
 
 a:hover {
-	color: #00b8eb;	
+	text-decoration: underline;
+	color: navy;	
+	
 }
 
-p { font-size: 1.3em; }
+p { font-size: 1.5em; }
 .p { font-size: 1em; }
 
 

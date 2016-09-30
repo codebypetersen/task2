@@ -18,7 +18,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 	/* bindParam binds the :email with the actual email posted using POST - safety measure */
 	$records->bindParam(':email', $_POST['email']);
 	
-	/* Exectuces the $records */ 
+	/* Executes the $records */ 
 	$records->execute();
 	
 	/* Fetches the email where email matches the typed in email */
@@ -35,7 +35,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 		/* Redirects the user to the homepage, if he succesfully logs in */
 		header("Location: /task2");
 		
-		/* If he doesn't succesfully log in, this message is displayed */
+		/* If he/she doesn't succesfully log in, this message is displayed */
 	} else {
 		$message = 'Sorry, those credentials do not match';
 	}
@@ -73,6 +73,8 @@ endif;
 		<input type="submit">
 
 	</form>
+    
+    <!--require the footer content-->
     <?php require 'footer.php'; ?>
 
 </body>
