@@ -28,7 +28,7 @@ if( isset($_SESSION['user_id']) ){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Task 2, PHP Login System</title>
+	<title>PHP Login System</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
@@ -47,7 +47,7 @@ if( isset($_SESSION['user_id']) ){
 		<br /><br />You are now successfully logged in!
 		<br /><br />
         <p>Welcome to your own personal page</p>
-        <a href="http://swpgraphics.com">Portfolio</a><br><br><br>
+        <a href="http://swpgraphics.com" target="_blank">Portfolio</a><br><br><br>
 		<a href="logout.php">Logout of here?</a>
         
 	<!-- If the user is NOT logged in he/she will see this -->
