@@ -45,7 +45,6 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 endif;
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

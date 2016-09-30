@@ -4,7 +4,7 @@ $username = 'sebastian';
 $password = 'sebastian123';
 $database = 'task2';
 
-/* Connecting to database using PDO (new standard for transfering information)
+/* Connecting to database using PDO (new standard for transfering information including php)
  If there's an error, it is caught (catch) and, using a variable, gets echoed out, so you can see it */
 
 try{
